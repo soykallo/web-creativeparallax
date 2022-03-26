@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Parallax Creative Studio</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Dosis:wght@200;300;400;500;600;700;800&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <section>
+            <img src="img/parallaxdos.png" id="first" alt="imagen parallax">
+            <img src="img/Box.png" id="last" alt="imagenes varias">
+            <h1 id="text">Parallax</h1>
+        </section>
+
+        <div class="ab-text">
+            <div class="heading">
+                <h2>Creative Studio</h2>
+                <p>Un estudio creativo de freelances, con todas las herramientas para crear experiencias asombrosas para el usuario, <br> cualquier idea que tengas en un producto digital.</p>
+            </div>
+
+            <div class="container">
+                <div class="box box1">
+                    <div class="in">
+                        <p>Impresion 3D</p>
+                    </div>
+                </div>
+
+                <div class="box box2">
+                    <div class="in">
+                        <p>Realidad Virtual</p>
+                    </div>
+                </div>
+
+                <div class="box box3">
+                    <div class="in">
+                        <p>Desarrollo</p>
+                    </div>
+                </div>
+
+                <div class="box box4">
+                    <div class="in">
+                        <p>Cloud Computing</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bottom">
+                <p>© 2022 Design with ❤️  by SoyKallo</p>
+            </div>
+        </div>
+
+        <script>
+            let first = document.getElementById("first");
+            let last = document.getElementById("last");
+            let text = document.getElementById("text");
+
+            window.addEventListener('scroll', function(){
+                var value = window.scrollY;
+
+                first.style.top = value * 0,7 + 'px';
+                last.style.top = value * 0,5 + 'px';
+                text.style.top = value * 1 + 'px';
+            })
+        </script>
+    </body>
+</html>
